@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
    s.author = 'Will Townsend' 
    s.platform = :osx, '10.10' 
    s.source = { :git => "https://github.com/wtsnz/libimobiledevice.git", :tag => "v#{s.version}"}
-   s.preserve_paths = 'common/', 'src/*.h'
+   s.preserve_paths = 'common/', 'src/*.h', 'include/libimobiledevice/*.h'
    s.source_files = 'src/*.{h,c}', 'include/*.h', 'include/libimobiledevice/*.h', 'common/*.{h,c}'
    s.public_header_files =  'include/libimobiledevice/*.h'
 

@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
    s.license = {:type => 'GPL', :file => 'COPYING'}
    
    s.author = 'Will Townsend' 
-   s.platform = :osx, '10.10' 
+   s.ios.deployment_target = '9.2'
+   s.osx.deployment_target = '10.10'
    s.source = { :git => "https://github.com/wtsnz/libimobiledevice.git", :tag => "v#{s.version}"}
 
    s.preserve_paths = 'common/', 'src/*.h', 'include/libimobiledevice/*.h'
